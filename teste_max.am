@@ -1,0 +1,32 @@
+/*Programa que calcula o máximo valor de um vetor*/
+int vetor[10];
+
+int main()
+{
+	vetor[0] = 5;
+	vetor[1] = 90;
+	vetor[2] = 8;
+	vetor[3] = 13;
+	vetor[4] = 42;
+	vetor[5] = 33;
+	vetor[6] = 11;
+	vetor[7] = 1;
+	vetor[8] = 56;
+	vetor[9] = 9;
+
+	int i;
+	int max;
+
+	i = 0;
+	max = 0;
+	
+	while (i<10) do
+	{
+		if(vetor[i] > max) then
+			max = vetor[i];
+				
+		i = i+1;
+	};
+	
+	return  max;
+}

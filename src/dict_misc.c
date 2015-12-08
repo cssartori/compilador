@@ -1,0 +1,94 @@
+#include "dict_misc.h"
+#include "cc_tipos.h"
+#include <stdlib.h>
+
+fun_param_lista* cria_lista_parametros()
+{
+	return NULL;
+}
+
+fun_param_lista* insere_parametro(fun_param_lista* parametros, variable* var, int tipo_param, bool e_const)
+{
+	fun_param_lista* aux = parametros;
+	parametros = (fun_param_lista*)malloc(sizeof(fun_param_lista));
+	parametros->tipo_param = tipo_param;
+	parametros->var = var;
+	parametros->e_const = e_const;
+	parametros->proximo = aux;
+
+	switch(tipo_param)
+	{
+	case IKS_INT:
+		parametros->tamanho = IKS_TAM_INT;
+	break;
+	case IKS_FLOAT:
+		parametros->tamanho = IKS_TAM_FLOAT;
+	break;
+	case IKS_BOOL:
+		parametros->tamanho = IKS_TAM_BOOL;
+	break;
+	case IKS_CHAR:
+		parametros->tamanho = IKS_TAM_CHAR;
+	break;
+	case IKS_STRING:
+		parametros->tamanho = IKS_TAM_STRING;
+	break;
+	}
+
+	return parametros;	
+}
+
+int conta_parametros(fun_param_lista* parametros)
+{
+	int i=0;
+	while(parametros != NULL)
+	{
+		i++;
+		parametros=parametros->proximo;
+	}	
+	return i;
+}
+
+fun_param_lista* destroi_lista_parametros(fun_param_lista* parametros)
+{
+	fun_param_lista* aux = parametros;
+	while(parametros != NULL)
+	{
+		parametros = parametros->proximo;
+		free(aux);
+		aux = NULL;
+	}
+
+	return parametros;
+}
+
+
+
+
+lista_int* cria_lista_int()
+{
+	return NULL;
+}
+
+lista_int* insere_lista_int(lista_int* lista, int valor)
+{
+	lista_int* aux = lista;
+	lista = (lista_int*)malloc(sizeof(lista_int));
+	lista->valor = valor;	
+	lista->proximo = aux;
+
+	return lista;
+}
+
+lista_int* destroi_lista_int(lista_int* lista)
+{
+	lista_int* aux = lista;
+	while(aux != NULL)
+	{
+		lista = aux;
+		aux = aux->proximo;
+		free(lista);
+	}
+
+	return NULL;
+}

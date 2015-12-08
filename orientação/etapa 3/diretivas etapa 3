@@ -1,0 +1,7 @@
+TODO************************************************************
+DONE************************************************************
+-Implementar dois programas na Linguagem Amarela;
+-Implementar árovre (AST);
+-Criar a árvore AST com ponteiro global;
+-Geração de arquivo dot referente a AST;
+-Ajuste e adequação da gramática;

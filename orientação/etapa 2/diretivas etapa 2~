@@ -1,0 +1,9 @@
+TODO************************************************************
+- Fazer retorno das contantes de sucesso ou erro do parser à main
+- Associação do token à sua entrada na tabela de símbolos.
+DONE************************************************************
+- Descrever a gramática no parser
+- Complementar a chave do dicionário com o tipo de token
+- Completar o valor na entrada da hash com tipo da última ocorrencia, e o valor do token já convertido para o tipo (union). 
+- Corrigir erros do valgrind
+- Remoção de shift/reduce reduce/reduce.

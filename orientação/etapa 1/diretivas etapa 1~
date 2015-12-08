@@ -1,0 +1,8 @@
+TODO***********************************************************
+- Fazer ligação entre o analisador léxico com o dicionário e preencher tabela de símbolos;
+DONE***********************************************************
+- Rconhecer tokens;
+- Implementar tabela de símbolos (HASH);
+- Controlar número de linha
+- Ignorar comentários
+- Lançar erros léxicos

@@ -1,0 +1,22 @@
+Itens do registro de ativação:
+- Variáveis locais / parâmetros
+- Estado da máquina (fp e sp)
+- Valor retornado
+- End. de retorno
+
+Manter ordem dos itens do resgistro de ativação;
+
+Gerenciamento do fluxo através da pilha de ativação. Utilizar sp e fp;
+
+Calcular vinculos estáticos;
+
+Crição do registro de ativação na pilha, com apontamento para o código;
+
+Rotinas de atualização da pilha ao retornar de funções;
+
+Retorno do controle para a função chamadora (rótuos específicos para isto);
+
+Copia do parâmetro real para o formal;
+
+
+

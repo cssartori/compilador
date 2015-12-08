@@ -1,0 +1,28 @@
+int g(int o, int x, int y, int z)
+{
+	return (o+x+y+z);
+}
+
+
+int l(int k, int h)
+{
+	while(k >= 0) do {
+		int resp;
+		resp = g(h, k, 1, 1);
+		k=k-1;
+		h = h+resp;
+	};
+
+	return h;
+}
+
+int main()
+{
+	int xeta;
+	xeta = 5;
+
+	int om;
+	om = l(xeta, 2);
+
+	return om;
+}
